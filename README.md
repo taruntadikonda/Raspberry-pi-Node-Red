@@ -1,14 +1,14 @@
 ## Raspberry-pi-ultrasonic-live-data-to-phone-as-message-using-Node-Red
 Ultrasonic sensor is connected to the raspberry pi . This sensor values are collected in our mobile in form of messages.
 This is done using Node Red.
-#Node Red
+# Node Red
 Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
 
 It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.It is build on node.js.
 
 
 http://nodered.org/
-#Installation of Node Red on raspberry pi
+# Installation of Node Red on raspberry pi
 
 http://nodered.org/docs/hardware/raspberrypi
 
