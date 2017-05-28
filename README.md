@@ -29,7 +29,9 @@ http://nodered.org/docs/hardware/raspberrypi
 ![twilio](https://cloud.githubusercontent.com/assets/25893079/26528549/748334b2-43cc-11e7-8104-485d40f52e90.png)
 ### Create a python file and copy the code.
 import RPi.GPIO as GPIO
+
 import time
+
 GPIO.setmode(GPIO.BCM)
 
 TRIG = 23
