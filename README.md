@@ -20,13 +20,14 @@ http://nodered.org/docs/hardware/raspberrypi
 ![node red flow](https://cloud.githubusercontent.com/assets/25893079/26528548/6dfa1bba-43cc-11e7-8717-66799d9270a1.png)
 ## Creating a Twilio account
   Twilio is a Cloud communications platform for building SMS, Voice & Messaging applications on an API built for global scale. 
-  https://www.twilio.com/
+  https://www.twilio.com
+  
   Fill all the credentials , token number  and the phone number which is provied.
   ![add credentials in twilio](https://cloud.githubusercontent.com/assets/25893079/26528553/81af1804-43cc-11e7-8a5c-cb8df6f89983.png)
   Add the mobile number for which you need to get the message
 
 ![twilio](https://cloud.githubusercontent.com/assets/25893079/26528549/748334b2-43cc-11e7-8104-485d40f52e90.png)
-###Create a python file and copy the code.
+### Create a python file and copy the code.
 import RPi.GPIO as GPIO
 import time
 GPIO.setmode(GPIO.BCM)
