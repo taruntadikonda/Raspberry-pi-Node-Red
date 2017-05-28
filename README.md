@@ -1,4 +1,4 @@
-## Raspberry-pi-ultrasonic-live-data-to-phone-as-message-using-Node-Red
+### Raspberry-pi-ultrasonic-live-data-to-phone-as-message-using-Node-Red
 Ultrasonic sensor is connected to the raspberry pi . This sensor values are collected in our mobile in form of messages.
 This is done using Node Red.
 # Node Red
@@ -11,7 +11,9 @@ http://nodered.org/
 # Installation of Node Red on raspberry pi
 
 http://nodered.org/docs/hardware/raspberrypi
-
+## Node Red on raspberry pi
+  Node Red is defautly installed in  Raspbian Jessie operating system.Type the command node-red-start in the terminal.Once the node red 
+  is started, point a browser at the local host which is provided.
 ![node red flow](https://cloud.githubusercontent.com/assets/25893079/26528548/6dfa1bba-43cc-11e7-8717-66799d9270a1.png)
 ![twilio](https://cloud.githubusercontent.com/assets/25893079/26528549/748334b2-43cc-11e7-8104-485d40f52e90.png)
 ![add credentials in twilio](https://cloud.githubusercontent.com/assets/25893079/26528553/81af1804-43cc-11e7-8a5c-cb8df6f89983.png)
