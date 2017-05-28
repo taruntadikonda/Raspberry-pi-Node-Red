@@ -26,11 +26,50 @@ http://nodered.org/docs/hardware/raspberrypi
   Add the mobile number for which you need to get the message
 
 ![twilio](https://cloud.githubusercontent.com/assets/25893079/26528549/748334b2-43cc-11e7-8104-485d40f52e90.png)
-[ultrasonic.docx](https://github.com/taditarun/Raspberry-pi-ultrasonic-live-data-to-phone-as-message-using-Node-Red/files/1034151/ultrasonic.docx)
+###Create a python file and copy the code.
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BCM)
 
-  In the exec
+TRIG = 23
+ECHO = 24
+
+print "Distance Measurement In Progress"
+
+GPIO.setup(TRIG,GPIO.OUT)
+GPIO.setup(ECHO,GPIO.IN)
+
+GPIO.output(TRIG, False)
+print "Waiting For Sensor To Settle"
+time.sleep(2)
+
+GPIO.output(TRIG, True)
+time.sleep(0.00001)
+GPIO.output(TRIG, False)
+
+while GPIO.input(ECHO)==0:
+  pulse_start = time.time()
+
+while GPIO.input(ECHO)==1:
+  pulse_end = time.time()
+
+pulse_duration = pulse_end - pulse_start
+
+distance = pulse_duration * 17150
+
+distance = round(distance, 2)
+
+print "Distance:",distance,"cm"
+
+GPIO.cleanup()
+
+
+
+
+  In the exec node write the command sudo python followed by path of the code created.
 
 ![execution of exec node](https://cloud.githubusercontent.com/assets/25893079/26528557/88c006bc-43cc-11e7-8fe3-07483f04a54a.png)
+Finally connect the all the node and deploy the application.Finally data will be recived to your mobile as message.
 ![mobile message](https://cloud.githubusercontent.com/assets/25893079/26528810/c1b59a82-43d0-11e7-855c-d610b92b6d66.png)
 
 
