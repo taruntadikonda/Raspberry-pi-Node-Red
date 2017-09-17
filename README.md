@@ -2,15 +2,16 @@
 Ultrasonic sensor is connected to the raspberry pi . These sensor values are collected in our mobile in form of messages.
 This is done using Node Red.
 ## Node Red
-Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
+[Node-RED](http://nodered.org/) is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
 
 It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.It is build on node.js.
 
 
-http://nodered.org/
+
 ## Installation of Node Red on raspberry pi
 
-http://nodered.org/docs/hardware/raspberrypi
+
+[installation process](http://nodered.org/docs/hardware/raspberrypi)
 ## Node Red on raspberry pi
   Node Red is defaultly installed in  Raspbian Jessie operating system.Type the command node-red-start in the terminal.Once the node red 
   is started, point a browser at the local host which is provided.
@@ -19,8 +20,8 @@ http://nodered.org/docs/hardware/raspberrypi
   
 ![node red flow](https://cloud.githubusercontent.com/assets/25893079/26528548/6dfa1bba-43cc-11e7-8717-66799d9270a1.png)
 ## Creating a Twilio account
-  Twilio is a Cloud communications platform for building SMS, Voice & Messaging applications on an API built for global scale. 
-  https://www.twilio.com
+  [Twilio] (https://www.twilio.com)is a Cloud communications platform for building SMS, Voice & Messaging applications on an API built for global scale. 
+  
   
   Fill all the credentials , token number  and the phone number which is provied.
   ![add credentials in twilio](https://cloud.githubusercontent.com/assets/25893079/26528553/81af1804-43cc-11e7-8a5c-cb8df6f89983.png)
